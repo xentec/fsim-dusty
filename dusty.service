@@ -1,0 +1,10 @@
+[Unit]
+Description=Dust sampler
+
+[Service]
+ExecStart=%h/fsim-dusty/build/fsim-dusty
+Restart=on-failure
+WorkingDirectory=~
+
+[Install]
+WantedBy=default.target
